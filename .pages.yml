@@ -1,0 +1,87 @@
+# Admin panel settings for Pages CMS (app.pagescms.org)
+media:
+  input: media
+  output: /media
+
+content:
+  - name: works
+    label: Videos
+    type: file
+    path: works.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: category
+        label: Category
+        type: select
+        required: true
+        options:
+          values:
+            - value: ai-film
+              label: AI Short Films
+            - value: live-ai
+              label: Live Action × AI
+            - value: viral
+              label: Viral
+            - value: fashion
+              label: Fashion & Brands
+      - name: format
+        label: Shape
+        type: select
+        options:
+          values:
+            - value: v
+              label: Vertical 9:16
+            - value: h
+              label: Horizontal 16:9
+      - name: kind
+        label: Client or concept
+        type: select
+        options:
+          values:
+            - value: concept
+              label: Concept piece
+            - value: client
+              label: Client work
+      - name: vimeo
+        label: Vimeo link
+        type: string
+        description: Paste the full Vimeo link (e.g. https://vimeo.com/123456789). Use this OR upload a video file below.
+      - name: video
+        label: Video file (instead of Vimeo)
+        type: file
+        description: MP4 under 25 MB.
+      - name: before
+        label: Before video (raw) — only for before/after pieces
+        type: file
+        description: MP4 under 25 MB. Fill BOTH Before and After to show the comparison slider.
+      - name: after
+        label: After video (final) — only for before/after pieces
+        type: file
+        description: MP4 under 25 MB.
+      - name: poster
+        label: Thumbnail image (optional)
+        type: image
+      - name: desc
+        label: Description
+        type: text
+        description: 1–2 lines shown under the title when the video opens.
+      - name: tools
+        label: Tools used
+        type: string
+        description: e.g. Higgsfield · Seedance · DaVinci
+      - name: year
+        label: Year
+        type: string
+      - name: duration
+        label: Length
+        type: string
+        description: minutes:seconds, e.g. 0:30
+      - name: hidden
+        label: Hide from site
+        type: boolean
+        description: Turn on to hide this video without deleting it.

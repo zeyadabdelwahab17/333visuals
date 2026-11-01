@@ -1,0 +1,34 @@
+[
+  {
+    "title": "What Remains",
+    "category": "ai-film",
+    "format": "v",
+    "kind": "concept",
+    "vimeo": "",
+    "video": "/media/what-remains.mp4",
+    "before": "",
+    "after": "",
+    "poster": "/media/what-remains.jpg",
+    "desc": "A trailer for a family drama across three generations: a grandfather losing his memory, a father still grieving his wife, and a son caught between them.",
+    "tools": "Higgsfield Cinema Studio",
+    "year": "2026",
+    "duration": "1:00",
+    "hidden": false
+  },
+  {
+    "title": "Leon Wear",
+    "category": "fashion",
+    "format": "v",
+    "kind": "client",
+    "vimeo": "",
+    "video": "/media/leon-wear.mp4",
+    "before": "",
+    "after": "",
+    "poster": "/media/leon-wear.jpg",
+    "desc": "A short campaign reel for Leon Wear, built around their two-tone fleece jacket and shot by the water in late-afternoon light.",
+    "tools": "",
+    "year": "2026",
+    "duration": "0:13",
+    "hidden": false
+  }
+]
