@@ -56,13 +56,21 @@ content:
         type: file
         description: MP4 under 25 MB.
       - name: before
-        label: Before video (raw) — only for before/after pieces
+        label: Before video — only for before/after pieces
         type: file
-        description: MP4 under 25 MB. Fill BOTH Before and After to show the comparison slider.
+        description: MP4 under 25 MB (raw footage or behind the scenes). Fill BOTH Before and After to show the two clips together.
+      - name: before_label
+        label: Before label (optional)
+        type: string
+        description: Shown above the first clip. Leave empty for "Before".
       - name: after
-        label: After video (final) — only for before/after pieces
+        label: After video — only for before/after pieces
         type: file
-        description: MP4 under 25 MB.
+        description: MP4 under 25 MB (the final result).
+      - name: after_label
+        label: After label (optional)
+        type: string
+        description: Shown above the second clip. Leave empty for "After".
       - name: poster
         label: Thumbnail image (optional)
         type: image
