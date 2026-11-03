@@ -30,5 +30,23 @@
     "year": "2026",
     "duration": "0:13",
     "hidden": false
+  },
+  {
+    "title": "Elkoshk",
+    "category": "live-ai",
+    "format": "h",
+    "kind": "concept",
+    "vimeo": "",
+    "video": "",
+    "before": "/media/elkoshk-process.mp4",
+    "before_label": "How we shot it",
+    "after": "/media/elkoshk-final.mp4",
+    "after_label": "The final scene",
+    "poster": "/media/elkoshk.jpg",
+    "desc": "From the dark-comedy AI short about a Cairo kiosk hiding a secret. We filmed real performances in a white room, then placed them into AI-generated night locations, keeping the actors' real acting, lighting and motion shot by shot.",
+    "tools": "Higgsfield Cinema Studio · Seedance · DaVinci Resolve",
+    "year": "2026",
+    "duration": "0:22",
+    "hidden": false
   }
 ]
