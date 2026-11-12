@@ -48,5 +48,21 @@
     "year": "2026",
     "duration": "0:22",
     "hidden": false
+  },
+  {
+    "title": "Claude Code in 2 Minutes — Egyptian Arabic Dub",
+    "category": "dubbing",
+    "format": "h",
+    "kind": "concept",
+    "vimeo": "",
+    "video": "/media/claude-code-arabic-dub.mp4",
+    "before": "",
+    "after": "",
+    "poster": "/media/claude-code-arabic-dub.jpg",
+    "desc": "A 2-minute English tech explainer re-voiced in natural Egyptian Arabic, matching the speaker's pace, pauses and energy. Opens with 5 seconds of the original English. Unofficial portfolio demo; original video by Luke Byrne (AI Luke).",
+    "tools": "Gemini · Claude · ElevenLabs",
+    "year": "2026",
+    "duration": "2:02",
+    "hidden": false
   }
 ]

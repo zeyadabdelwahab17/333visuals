@@ -109,7 +109,7 @@ h2{font-family:var(--f-display);font-weight:800;font-size:clamp(40px,6vw,64px);l
 
 /* services / about */
 .band{border-top:1px solid var(--seam);padding-block:64px;scroll-margin-top:64px}
-.svc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:28px;border-top:1px solid var(--seam)}
+.svc{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin-top:28px;border-top:1px solid var(--seam)}
 .svc div{padding:22px 20px 22px 0;border-bottom:1px solid var(--seam);min-width:0}
 .svc div+div{padding-left:20px;border-left:1px solid var(--seam)}
 .svc h3{font-family:var(--f-display);font-weight:600;font-size:26px;margin:0 0 6px;letter-spacing:.02em}
@@ -161,7 +161,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 @media (max-width:900px){
   .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
   .svc{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .svc div:nth-child(3){padding-left:0;border-left:0}
+  .svc div:nth-child(odd){padding-left:0;border-left:0}
   .about{grid-template-columns:1fr;gap:20px}
 }
 @media (max-width:760px){.screen.pair,.screen.pair.v{grid-template-columns:1fr;width:100%}.screen.pair.v .clip video{height:auto;width:100%}}
@@ -217,7 +217,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <div>
           <p>333 Visuals started in Cairo, but our films don't have to stay here. With AI, a story can take place in a Tokyo alley, on a beach in Greece, or somewhere that doesn't exist at all, and we never have to leave the city.</p>
           <p>We still shoot with a camera when the idea calls for it, and a lot of our work mixes both: real people and real footage, taken wherever the story needs to go. We do it all ourselves, from the first idea to the final cut.</p>
-         <div class="tools" aria-label="Tools we use"><span>Higgsfield</span><span>Seedance</span><span>Kling</span><span>DaVinci Resolve</span><span>CapCut</span></div>
+         <div class="tools" aria-label="Tools we use"><span>Higgsfield</span><span>Seedance</span><span>Kling</span><span>DaVinci Resolve</span><span>CapCut</span><span>ElevenLabs</span></div>
         </div>
       </div>
       <div class="svc">
@@ -225,6 +225,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <div><h3>Fashion campaigns</h3><p>Lookbooks, launch films and campaign content for clothing brands.</p></div>
         <div><h3>Short films</h3><p>Live action, AI, or a mix of both, written and directed by us.</p></div>
         <div><h3>Social content</h3><p>Short, sharp videos made to be watched and shared.</p></div>
+        <div><h3>Localization &amp; dubbing</h3><p>Arabic subtitles and AI dubbing in natural Egyptian Arabic, timed to the original and checked by a native speaker.</p></div>
       </div>
     </div>
   </section>
@@ -261,7 +262,8 @@ const CATEGORIES = [
   {id:"ai-film", label:"AI Short Films", note:"Trailers and short stories, generated and directed shot by shot."},
   {id:"live-ai", label:"Live Action × AI", note:"Real footage in, finished film out. Some pieces show how we shot it next to the final scene."},
   {id:"viral",   label:"Viral",          note:"Short, loud, made for the scroll. The clips that got shared."},
-  {id:"fashion", label:"Fashion & Brands", note:"Product reels and campaign films for clothing brands."}
+  {id:"fashion", label:"Fashion & Brands", note:"Product reels and campaign films for clothing brands."},
+  {id:"dubbing", label:"Localization & Dubbing", note:"English videos re-voiced in natural Egyptian Arabic: translated, timed to the speaker, and reviewed by a native speaker."}
 ];
 let WORKS = [];
 
@@ -278,8 +280,8 @@ const hasBA = w => !!(w.before && w.after);
 /* ---------- app ---------- */
 const $ = s => document.querySelector(s);
 const catLabel = id => (CATEGORIES.find(c=>c.id===id)||{}).label || id;
-const GLYPH = {"ai-film":"FILM","live-ai":"RAW→","viral":"VIRAL","fashion":"LOOK"};
-const HUES = {"ai-film":[226,14],"live-ai":[200,8],"viral":[268,16],"fashion":[28,12]};
+const GLYPH = {"ai-film":"FILM","live-ai":"RAW→","viral":"VIRAL","fashion":"LOOK","dubbing":"EN→AR"};
+const HUES = {"ai-film":[226,14],"live-ai":[200,8],"viral":[268,16],"fashion":[28,12],"dubbing":[168,14]};
 
 /* Upwork-safe mode: add ?ref=upwork (or #upwork) to the link */
 const upwork = /ref=upwork/.test(location.search) || location.hash === "#upwork";

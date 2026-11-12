@@ -29,6 +29,8 @@ content:
               label: Viral
             - value: fashion
               label: Fashion & Brands
+            - value: dubbing
+              label: Localization & Dubbing
       - name: format
         label: Shape
         type: select
