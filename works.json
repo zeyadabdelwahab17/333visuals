@@ -1,5 +1,37 @@
 [
   {
+    "title": "Clique — Ch.01 Cairo",
+    "category": "fashion",
+    "format": "v",
+    "kind": "client",
+    "vimeo": "",
+    "video": "/media/clique-ch01-reel.mp4",
+    "before": "",
+    "after": "",
+    "poster": "/media/clique-ch01-reel.jpg",
+    "desc": "A launch teaser for Clique's unreleased sample tee, set on a golden-hour street in downtown Cairo. One AI actor, four moodboard frames animated into shots and cut on the beat, closing on the Chapter 01 card.",
+    "tools": "Higgsfield · Soul 2.0 · GPT Image · Kling 3.0",
+    "year": "2026",
+    "duration": "0:13",
+    "hidden": false
+  },
+  {
+    "title": "Clique — Should We Drop It?",
+    "category": "fashion",
+    "format": "v",
+    "kind": "client",
+    "vimeo": "",
+    "video": "/media/clique-ugc.mp4",
+    "before": "",
+    "after": "",
+    "poster": "/media/clique-ugc.jpg",
+    "desc": "An AI-made UGC ad in Egyptian Arabic. A creator shows the sample's white zigzag stitching up close and asks viewers to comment if it should drop, turning an unreleased piece into a vote.",
+    "tools": "Higgsfield · Soul 2.0 · GPT Image · Seedance 2.5",
+    "year": "2026",
+    "duration": "0:15",
+    "hidden": false
+  },
+  {
     "title": "What Remains",
     "category": "ai-film",
     "format": "v",
